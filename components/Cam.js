@@ -26,7 +26,7 @@ export default class Homescreen extends React.Component {
            quality: 0.2
        });
        this.setState({
-            imageUri: `data:image/jpg;base64,${snap}`,
+            imageUri: `data:image/jpg;base64,${snap.base64}`,
             rawB64: snap.base64
        })
 

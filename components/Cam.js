@@ -63,7 +63,8 @@ export default class Homescreen extends React.Component {
         console.log(err)
     });
     const content = await rawResponse.json();
-    this.getTotalPrice(content.responses[0].fullTextAnnotation.text);
+    console.log(JSON.stringify(content));
+    //this.getTotalPrice(content.responses[0].fullTextAnnotation.text);
     //console.log(content.responses[0].fullTextAnnotation.text);
    }
 

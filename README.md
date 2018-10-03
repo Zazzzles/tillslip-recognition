@@ -5,7 +5,8 @@
 ## Caveats
 
 > This solution only works for South African tillslip formats in Rand.
-> It is by no means a 100% accurate solution, there are many types of tillslips that have not been tested for
+
+> It is by no means a 100% complete solution, there are many types of tillslips that have not been tested for
 
 ## Installation
 

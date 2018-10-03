@@ -1,26 +1,26 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {createStackNavigator} from 'react-navigation';
+
 import Homescreen from './components/Homescreen'
 import Cam from './components/Cam'
-import { Provider } from 'unstated';
+import Result from './components/Result'
 
 const RootStack = createStackNavigator({
   HomePage: Homescreen,
-  CamPage: Cam
-  
+  CamPage: Cam,
+  Result
 },
 {
-  initialRouteName: 'HomePage'
+  initialRouteName: 'HomePage',
+  headerMode: 'none'
 }
 );
 
 export default class App extends React.Component {
   render() {
     return (
-      <Provider>
          <RootStack/>
-      </Provider>
      
     );
   }

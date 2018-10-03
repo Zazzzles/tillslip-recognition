@@ -1,31 +1,13 @@
-import React from 'react';
-import { Button,StyleSheet, Image,Text, View,TouchableOpacity } from 'react-native';
-import {StackNavigator} from 'react-navigation'
-import { Camera, Constants } from 'expo';
+import React,{ PureComponent } from 'react';
+import { Button,StyleSheet, View } from 'react-native';
 
-export default class Homescreen extends React.Component {
-
-  state = {
-    snap: null,
-  };
-
-
-  componentDidMount(){
-   
-  }
-
-  openCamera = () =>{
-
-  }
+export default class Homescreen extends PureComponent {
 
   render() {
     const { navigate } = this.props.navigation;
     return (
-      
       <View style={styles.container}>
-      
         <Button onPress={ () => navigate('CamPage')} title="Open Camera" />
-        
       </View>
     );
   }
@@ -36,7 +18,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight,
     backgroundColor: '#ecf0f1',
   }
 });

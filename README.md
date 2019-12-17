@@ -1,8 +1,6 @@
 # Tillslip recognition with React Native and Expo
 
-> A Google Vision implementation to read tillslips and determine what the total price i
-
-![Example](https://media.giphy.com/media/8Zhmwb6IglPoZPfKwu/giphy.gif)
+> A Google Vision implementation to read tillslips and determine what the total price is
 
 ## Caveats
 
